@@ -1,0 +1,39 @@
+<html>
+<head>
+        <h1> Home page </h1>
+
+        <h2>
+        Welcome back <%= userObject.userName %> ! <br>
+        your password: <%= userObject.password %> <br>
+        your name: <%= userObject.name %><br>
+        your age: <%= userObject.age %> <br>
+        </h2>
+</head>
+<body background="dogswingin.gif">
+    
+<style>
+h1 {color: white;}
+h1 {font-family: Helvetica;}
+h1{-webkit-text-stroke-width: 2px;}
+h1{-webkit-text-stroke-color: black;}
+body {background-color: lightblue;}
+h2 {color: white;}
+h2 {font-family: Helvetica;}
+h2{-webkit-text-stroke-width: 1px;}
+h2{-webkit-text-stroke-color: black;}
+body{background-repeat: no-repeat;}
+body{background-size: 100%;}
+</style>
+
+
+
+<form action="addAttributes" method="post">
+Name:<input type="text" name="name">
+Age:<input type ="text" name="age">
+Putinmeme:<input type="text" name="putinmemes" size= "15" value= ""> <br>
+<input type="submit" value="ADD">
+</form>
+
+</body>
+
+</html>

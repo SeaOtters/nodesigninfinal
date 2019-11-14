@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <h1>List of info</h1>
+    </head>
+    <body background= "ghostridethewhip.gif">
+        Username  Password  Name  Age
+
+<table cellspacing= "8 style="border:1px white solid">
+    <% for(var i=0; i<results.length; i++) { %>
+        <tr>
+            <td><%= results[i].userName %> </td>              
+            <td> <%= results[i].password %> </td>
+            <td> <%= results[i].name %> </td>
+            <td> <%= results[i].age %> </td>
+        </tr>
+    <% } %>
+</table>
+
+<style>
+h1 {color: white;}
+h1 {font-family: Helvetica;}
+h1{-webkit-text-stroke-width: 2px;}
+h1{-webkit-text-stroke-color: black;}
+body{background-repeat: no-repeat;}
+body{background-size: 100%;}
+body{color: white;}
+body{font-family: Helvetica;}
+body{font-size: 15px;}
+table{color: white;}
+table{font-family: Helvetica;}
+table{font-size: 20px;}
+
+</style>
+
+</body>
+
+</html>
+

@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    
+    function go(){
+        var u = document.getElementById("userName").value
+        var p = document.getElementById("passWord").value
+    
+        $.ajax({
+        url : "http://localhost:3000/post",
+        type: "POST",
+        data : {userName: u, passWord: p},
+        success: postProcess
+    });
+}
+
+    function process(data) {
+
+       console.log(data);
+
+    }        
+    function postProcess(data,status) {
+
+        console.log(data);
+        console.log("Status:" + status);
+
+    }
+    </script>
+    </head>
+
+    
+    <body background="Pugjammin.gif">
+
+
+      <h1> LOGIN </h1> 
+        <form action="login" method="post">
+            <input type="text" name="username" >
+            <input type="text" name="password" >
+            <input type="submit">
+        </form>
+
+        <a href='/displayList'>list :)</a> 
+        <br>
+        <br>
+        <br>
+        <a href='/spooky'>dont click 0_0</a>
+
+        
+    </body>
+   
+    
+
+<style>
+    h1 {color: white;}
+    h1 {font-family: Helvetica;}
+    h1{-webkit-text-stroke-width: 2px;}
+    h1{-webkit-text-stroke-color: black;}
+    body {background-color: cyan;}
+    body {font-family: verdana;}
+    body {color: white;}
+    body{background-repeat: no-repeat;}
+    body{background-size: 100%;}
+
+
+    
+</style>
+
+</html>

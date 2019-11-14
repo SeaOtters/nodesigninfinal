@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    
+    function go(){
+        var u = document.getElementById("userName").value
+        var p = document.getElementById("passWord").value
+    
+        $.ajax({
+        url : "http://localhost:3000/post",
+        type: "POST",
+        data : {userName: u, passWord: p},
+        success: postProcess
+    });
+}
+
+    function process(data) {
+
+       console.log(data);
+
+    }        
+    function postProcess(data,status) {
+
+        console.log(data);
+        console.log("Status:" + status);
+
+    }        
+</script>
+<style>
+    h1 {color: white;}
+    h1 {font-family: verdana;}
+    body {background-color: cyan;}
+    body {font-family: verdana;}
+
+
+    
+</style>
+<h1> Enter your Credentials! </h1>
+</head>
+
+<body>
+<form action="login" method="post">
+    Username:
+    <input type="text" name="attemptUsername">
+    Password:
+    <input type="text" name="attemptPassword">
+    <input type="submit">
+</form>
+
+
+  
+
+
+</body>
+
+
+</html>

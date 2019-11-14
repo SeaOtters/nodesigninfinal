@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <h1>List of Putinmemes</h1>
+    </head>
+    <body background= "putinclap.gif">
+        Name  Theme  Age
+
+<table cellspacing= "8 style="border:1px white solid">
+    <% for(var i=0; i<results.length; i++) { %>
+        <tr>
+            <td><%= results[i].putinName %> </td>              
+            <td> <%= results[i].theme %> </td>
+            <td> <%= results[i].putinAge %> </td>
+        </tr>
+    <% } %>
+</table>
+
+<style>
+h1 {color: white;}
+h1 {font-family: Helvetica;}
+h1{-webkit-text-stroke-width: 2px;}
+h1{-webkit-text-stroke-color: black;}
+body{background-repeat: no-repeat;}
+body{background-size: 100%;}
+body{color: white;}
+body{font-family: Helvetica;}
+body{font-size: 15px;}
+table{color: white;}
+table{font-family: Helvetica;}
+table{font-size: 20px;}
+
+</style>
+
+</body>
+
+</html>
